@@ -1,0 +1,102 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../solar/img/eolica.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.title {
+    font-size: 2.5em;
+    margin: 0;
+}
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 40px; 
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: 45%; 
+    margin: 10px 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.section:hover {
+    transform: scale(1.05); 
+}
+
+.section-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.section-text {
+    font-size: 1.2em;
+}
+
+
+.section-list {
+    text-align: left;
+    font-size: 1.1em;
+    margin-left: 20px;
+}
+
+.chart-container {
+    width: 10cm;  
+    height: 10cm;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 1.2em;
+}

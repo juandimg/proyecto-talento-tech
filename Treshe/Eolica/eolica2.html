@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Energía Eólica</title>
+    <link rel="stylesheet" href="./stylesEolica.css"> <!-- Este es el archivo CSS que vamos a usar -->
+   
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><a href="../inicio.html">TRESHE</a> </div>
+        <div class="links">
+            
+            <a href="../hidraulica/index.html">Energía Hidraulica <img src="../hidraulica/img/represa.png" width="25px" alt=""></a>
+            <a href="../solar/index.html">Energia Solar <img src="../hidraulica/img/solar.png" alt="" width="25px"></a>
+            <a href="../Eolica/eolica2.html">Energia Eolica <img src="../hidraulica/img/5782302.png" alt="" width="25px"></a>
+        </div>
+    </nav>
+    <header class="header">
+        <h1 class="title">Energía Eólica</h1>
+    </header>
+
+    <div class="main-content">
+        <div class="section-container">
+            <!-- Origen -->
+            <div class="section">
+                <h2 class="section-title">Origen</h2>
+                <p class="section-text">
+                    La energía eólica fue inventada a finales del siglo XIX por el físico francés Charles F. Brush.
+                </p>
+                <p class="section-text">
+                    En la actualidad, la energía eólica representa al menos el 15% de todas las energías renovables, 
+                    y se prevé que su crecimiento sea mayor en el futuro debido a que los ingenieros y científicos le 
+                    dan más aplicaciones en el hogar e industriales.
+                </p>
+            </div>
+
+            <!-- Cómo funciona? -->
+            <div class="section">
+                <h2 class="section-title">¿Cómo funciona?</h2>
+                <p class="section-text">
+                    Los aerogeneradores con grandes aspas giran cuando son impulsadas por el viento, el movimiento de las aspas genera energía mecánica, el generador transforma la energía mecánica en electricidad.
+                </p>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <!-- Características -->
+            <div class="section">
+                <h2 class="section-title">Características</h2>
+                <ul class="section-list">
+                    <li>Es una energía renovable e inagotable.</li>
+                    <li>Es amigable con el medio ambiente y no produce sustancias tóxicas para la capa de ozono.</li>
+                    <li>Es una energía rentable.</li>
+                    <li>Se puede instalar incluso en zonas aisladas y lejanas.</li>
+                    <li>Reduce el uso de combustibles fósiles.</li>
+                    <li>No contamina el agua, ni el suelo y no genera pasivos ambientales.</li>
+                    <li>Tiene bajos costos operativos y de mantenimiento.</li>
+                    <li>Se puede usar en residencias y en la industria.</li>
+                </ul>
+            </div>
+
+            <!-- Gráfico de torta -->
+            <div class="section">
+                <h2 class="section-title">Porcentaje de Utilización por Tipo de Energía en el Mundo</h2>
+                <div class="chart-container">
+                    <!-- Gráfico de torta va aquí -->
+                    <canvas id="myPieChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="footer-text">© 2024 Bootcamp UdeA | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('myPieChart').getContext('2d');
+        var myPieChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Petróleo', 'Carbón', 'Gas natural', 'Hidroeléctrica', 'Energía nuclear', 'Eólica', 'Energía solar', 'Biocarburantes', 'Resto'],
+                datasets: [{
+                    label: 'Porcentaje de Utilización',
+                    data: [32.89, 29.16, 23.40, 6.78, 4.43, 1.45, 0.43, 0.57, 0.89],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(153, 102, 255, 0.7)',
+                        'rgba(255, 159, 64, 0.7)',
+                        'rgba(0, 255, 0, 0.7)',
+                        'rgba(255, 0, 0, 0.7)',
+                        'rgba(100, 100, 100, 0.7)'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+    </script>
+</body>
+</html>
