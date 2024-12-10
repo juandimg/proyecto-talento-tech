@@ -70,11 +70,11 @@ h1{
     gap: 20px;
     max-width: 100%;
     padding: 20px;
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    gap: 20px; /* Espaciado entre los cuadros */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten si el espacio es limitado */
-    padding: 20px; /* Espaciado interno del contenedor */
+    display: flex; 
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: wrap; 
+    padding: 20px; 
 }
 .card {
    background-color: transparent;
@@ -168,7 +168,7 @@ footer {
     position: relative;
     width: 100%;
     background-color: #f8f8f8;
-    height: auto; /* Ajusta automáticamente según el contenido */
+    height: auto; 
     padding: 20px;
     text-align: center;
 }
